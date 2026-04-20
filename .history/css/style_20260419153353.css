@@ -1,0 +1,1175 @@
+/*font-family: 'Open Sanas', sans-serif;
+font-family: 'Oswald', sans-serif*/
+/* Делаем первоначальные настройки, подходит для любого проекта. */
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url('../fonts/TildaSans-VF.ttf') format('truetype'),
+        url('../fonts/TildaSans-VF.woff') format('woff'),
+        url('../fonts/TildaSans-VF.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.text-Tilda {
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Делаем затемнение */
+.image_container {
+    /* height: 1924px; */
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../image/Главная_2.jpg) !important;
+    background: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+    margin: 0px auto;
+    display: inline-block;
+    /* Ограничиваем размер контейнера — опционально */
+    /* width: 100%; */
+    /* max-width: 800px; */
+    overflow: hidden;
+
+}
+
+/* Псвевдожлемент для затемнения */
+
+.container {
+    /* max-width: 1270px; */
+    margin: 0px auto;
+    /* padding-top: 100px; */
+}
+
+.contacts_header {
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-around;
+    align-items: center;
+    /* padding-bottom: 100px; */
+    /* width: 1700px; */
+    /* margin: 0px auto; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contacts {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* color: green; */
+}
+
+.header {}
+
+.header_box {
+    max-width: 1600px;
+    margin: 0px auto;
+}
+
+.logo_container {
+    /* position: absolute; */
+    top: 0;
+    left: 70px;
+    width: 200px;
+    height: 200px;
+}
+
+.logo_company {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+}
+
+.adress {
+    color: green;
+
+}
+
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+.icon_header {
+    font-size: 30px;
+    color: #3084bb;
+}
+
+
+.project_name {
+    color: #3084bb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.offece_adress {
+    color: #1f9fd0
+}
+
+.menu {
+    /* margin-bottom: 30px; */
+    /* background-color: #edeeef; */
+    /* border-bottom: 2px solid; */
+    max-width: 1700px;
+    /* margin-bottom: 30px; */
+    /* background-color: #edeeef; */
+    /* border-bottom: 2px solid; */
+    margin: 0px auto;
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* max-width: 1410px; */
+    /* background-color: #00BC00; */
+    padding: 32px 0px 35px 8px;
+    font-family: "TildaSans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+
+.phone_number_block {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+
+
+.background_box {
+    /* width: 100%; */
+    /* занимает всю ширину контейнера */
+    /* height: 100%; */
+    /* занимает всю высоту контейнера */
+    /* object-fit: cover; */
+    /* заполняет контейнер с обрезкой краёв */
+    /* display: block; */
+    /* убирает отступ снизу */
+}
+
+.button_call {
+    margin-left: 30px
+}
+
+background_image_container {}
+
+/* Стили materialize для кнопки вызова */
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+
+.waves-effect input[type="button"],
+.waves-effect input[type="reset"],
+.waves-effect input[type="submit"] {
+    border: 0;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: inherit;
+    background: none;
+}
+
+.waves-effect img {
+    position: relative;
+    z-index: -1;
+}
+
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+
+.btn,
+.btn-large,
+.btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #61cc0c;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.btn-large,
+.btn-small,
+.btn-flat {
+    font-size: 14px;
+    outline: 0;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn-flat {
+    border: none;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Inter , sans-serif'
+}
+
+.btn_style {
+    font-size: 16px;
+    border-radius: 6px;
+    height: 36px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 10px 20px 1px rgba(27, 191, 157, 0.35) !important;
+    text-transform: math-auto;
+    font-weight: bold;
+}
+
+/* Закрыл секцию */
+
+.clients_icone {
+    /* background-color: #edeeef; */
+    background-color: #fff;
+}
+
+.h2_title {
+    text-align: center
+}
+
+.icons_group {
+    display: flex;
+    justify-content: center;
+    max-width: 1410px;
+    margin: auto;
+    gap: 100px;
+}
+
+.icone_size {
+    width: 150px;
+    height: 100px;
+}
+
+.h2_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    display: block;
+    background-color: wheat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container_clients {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #1f9fd0;
+}
+
+.icone_size {
+    stroke: #000;
+    /* Цвет обводки */
+    stroke-width: 10px;
+    /* Толщина обводки */
+}
+
+.text_p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #3084bb;
+}
+
+/* Для  текста под оверлеем */
+.overlay-text {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 35px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.info-section {
+    position: absolute;
+    top: 12%;
+    /* left: 50%; */
+    /* width: 80%; */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    min-height: 350px;
+    background-color: white;
+    width: 350px;
+}
+
+.contact-info-title {
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-size: 14px;
+    color: #000
+}
+
+/* Стили для заимствованные с обратной формой */
+
+.row_flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Стили для окна формы обратной связи */
+.feedback-form {
+    position: absolute;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 23%;
+    left: 7%;
+}
+
+.h2_tltle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'TildaSans', Arial, sans-serif;
+}
+
+.text_p2 {
+    /* text-align: center; */
+    color: gray;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.text_p2 span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.phone-container {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-container select {
+    flex: 0 0 60px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+}
+
+.checkbox_agreement {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.checkbox_button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 1px rgba(27, 191, 157, 0.35) !important;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.contact-info-title {
+    margin-bottom: 15px
+}
+
+.form-group {}
+
+.checkbox-group {}
+
+/* Секция о нас */
+
+
+.about {
+    padding-top: 30px;
+    /* padding-bottom: 40px; */
+    /* min-height: 1080px; */
+}
+
+.about_flex {
+    max-width: 1600px;
+    display: flex;
+    margin: 0px auto;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.abot_item {
+    text-align: center;
+    max-width: 250px;
+}
+
+.about_h3 {
+    color: #61cc0c;
+    font-size: 32px;
+    font-family: 'Russo One', Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.block_text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.h2_about {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.rectangle {
+    width: 97px;
+    height: 6px;
+    background-color: #61cc0c;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.block_advantages {
+    margin-top: 50px;
+    /* background-color: #3084bb; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../image/047dafdc-4955-473c-a2d0-8f6574bdfc31.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+
+}
+
+.h2_advantages {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #61cc0c;
+    font-size: 30px;
+    font-family: 'Russo One', Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+.advantages-grid {
+    display: grid;
+    max-width: 1600px;
+    margin: 0px auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding-top: 150px;
+}
+
+.icon {
+    font-size: 50px;
+    color: #3084bb;
+    margin-bottom: 15px;
+}
+
+.advantage-item {
+    color: black;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5%;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffffb5;
+    align-content: center;
+}
+
+.advantage_text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Секция Партнеры */
+.cooperate {}
+
+.grid_cooperate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 колонок → 4 ряда для 20 логотипов */
+    gap: 24px;
+    /* расстояние между логотипами */
+    padding: 20px;
+    align-items: center;
+    /* вертикальное выравнивание содержимого ячеек */
+}
+
+.cooperate_h2 {}
+
+.cooperate_item {
+    background-color: #f8f9fa;
+    /* опционально: фон для единообразия */
+    border-radius: 12px;
+    /* скругление */
+    padding: 16px;
+    /* внутренний отступ вокруг лого */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.img_cooperate {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* сохраняет пропорции, логотип вписывается в ячейку */
+    display: block;
+}
+
+/* Секция с карточками */
+
+.services-pricing {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8edf5 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Расстояние между карточками */
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* Равномерное распределение пространства */
+    min-width: 0;
+    /* Позволяет сжиматься при необходимости */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-category {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #61cc0c;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #eee;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.service-name {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.service-price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+.li_decoration {
+    min-height: 150px;
+}
+
+.service-note {
+    display: block;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.li_decoration :hover {
+    transition: border 0.3s;
+    padding: 5px 5px 5px 5px
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 992px) {
+    .cards-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service-card {
+        min-width: auto;
+    }
+}
+
+/* Иконки в секции */
+.eco-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+/* Стили для каждой иконки */
+.eco-icon {
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #b7bbb4;
+    /* Зелёный — экологичный цвет */
+    cursor: pointer;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin: 0px auto;
+}
+
+/* Эффект при наведении */
+.eco-icon:hover {
+    transform: scale(1.1);
+    color: #61cc0c;
+    /* Более тёмный зелёный */
+}
+
+
+/* Подпись под иконкой */
+.eco-icon p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Конец секции с иконками */
+.service-list {
+    max-width: 1600px;
+    margin: auto;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid grey;
+}
+
+/* Начало секции с предложение */
+.cta-section-with-icons {
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+    text-align: center;
+    border-radius: 8px;
+    margin: 0px auto;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-row i {
+    font-size: 24px;
+    color: #666;
+}
+
+.cta-section-with-icons h3 {
+    /* font-size: 1.5em; */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cta-section-with-icons p {
+    color: #4b4a4a;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.discount {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.icon-inline {
+    margin: 0 8px;
+    color: #61cc0c;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #61cc0c, #349151);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 15px;
+    border-radius: 12px;
+    width: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    box-shadow: 0px 10px 20px 1px rgba(27, 191, 157, 0.35) !important;
+}
+
+.special {
+    color: red
+}
+
+.cta-button i {
+    margin-right: 8px;
+}
+
+.cta-button:hover {
+    background: #61cc0c;
+}
+
+
+/* Конец секции с предложением */
+
+/* Секция с партнерами */
+.confidentiality-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+
+/* главная секция */
+.confidentiality-section {
+    background: #ffffff;
+    padding: 5rem 1.5rem;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+
+/* заголовок */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: #0e2a3b;
+}
+
+.section-title span {
+    background: linear-gradient(135deg, #61cc0c, #308a4c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+@media (min-width: 640px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* блок с сообщением о логотипах */
+.privacy-message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #f0f6f0;
+    padding: 1rem 1.5rem;
+    border-radius: 28px;
+    display: inline-block;
+    margin-bottom: 1.8rem;
+    color: #1c4d2d;
+    border-left: 4px solid #61cc0c;
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+}
+
+.privacy-message i {
+    margin-right: 10px;
+    color: #61cc0c;
+    font-size: 1.2rem;
+}
+
+.description-text {
+    font-size: 1rem;
+    color: #2c3e44;
+    margin-bottom: 1rem;
+    max-width: 780px;
+}
+
+.values-highlight {
+    background: #fef9e6;
+    padding: 1.2rem 1.8rem;
+    border-radius: 24px;
+    margin: 1.8rem 0 1.8rem 0;
+    border: 1px solid #ffe6b3;
+    color: #5a3e1b;
+    font-weight: 500;
+}
+
+.partners-intro {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0f3b2c;
+    /* display: flex; */
+    gap: 12px;
+    text-align: center;
+}
+
+/* список компаний */
+.partners-grid {
+    list-style: none;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.gren_line{
+    
+}
+/* каждый элемент списка: галочка | название | иконка */
+.partner-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px 16px;
+    background: #ffffff;
+    padding: 0.9rem 1.2rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    border: 1px solid #eef2f0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.partner-item:hover {
+    border-color: #cfe3d5;
+    background: #fefefc;
+    box-shadow: 0 8px 20px rgba(0, 32, 16, 0.06);
+    transform: translateX(4px);
+}
+
+/* иконка-галочка */
+.check-icon {
+    font-size: 1.5rem;
+    color: #61cc0c;
+    width: 28px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.1s ease;
+}
+
+.partner-item:hover .check-icon {
+    transform: scale(1.05);
+}
+
+/* название компании */
+.company-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1c2f3a;
+    letter-spacing: -0.01em;
+    word-break: break-word;
+    padding-right: 4px;
+}
+
+/* тематическая иконка компании */
+.company-icon {
+    font-size: 1.35rem;
+    width: 32px;
+    text-align: center;
+    color: #5f7f6e;
+    transition: color 0.2s, transform 0.1s;
+    flex-shrink: 0;
+}
+
+.partner-item:hover .company-icon {
+    color: #61cc0c;
+    transform: scale(1.05);
+}
+
+/* финальный блок */
+.outro-block {
+    margin-top: 2.5rem;
+    padding: 1.5rem 1.8rem;
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+    border-radius: 28px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    border-left: 6px solid #61cc0c;
+    color: #1e3b2c;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.outro-block i {
+    font-size: 1.8rem;
+    color: #61cc0c;
+}
+
+/* футер с дополнительными гарантиями */
+.confidence-footer {
+    margin-top: 1.8rem;
+    font-size: 0.85rem;
+    color: #6a7c74;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.confidence-footer i {
+    margin-right: 6px;
+}
+
+/* адаптивность */
+@media (max-width: 640px) {
+    .confidentiality-section {
+        padding: 3rem 1rem;
+    }
+
+    .partner-item {
+        padding: 0.7rem 1rem;
+        gap: 10px;
+    }
+
+    .company-name {
+        font-size: 0.9rem;
+    }
+
+    .check-icon {
+        font-size: 1.3rem;
+        width: 24px;
+    }
+
+    .company-icon {
+        font-size: 1.2rem;
+        width: 28px;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .privacy-message {
+        font-size: 1rem;
+    }
+}
+
+/* анимация появления элементов списка */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.partner-item {
+    animation: fadeSlideUp 0.4s ease forwards;
+    opacity: 0;
+}
+
+.partner-item:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.partner-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.partner-item:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.partner-item:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.partner-item:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.partner-item:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.partner-item:nth-child(7) {
+    animation-delay: 0.35s;
+}

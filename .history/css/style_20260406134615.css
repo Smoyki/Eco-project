@@ -1,0 +1,109 @@
+/*font-family: 'Open Sanas', sans-serif;
+font-family: 'Oswald', sans-serif*/
+/* Делаем первоначальные настройки, подходит для любого проекта. */
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.header_menu {
+    min-height: 1024px;
+    background: no-repeat;
+    background-size: cover;
+    background-color: #edeeef;
+    background-image: url(../image/76d2a01c-fbc9-42bc-917c-588e149dd0df.jpg) ;
+    
+}
+
+.container {
+    /* max-width: 1100px; */
+    /* margin: 0px auto; */
+    /* padding-top: 100px; */
+}
+
+.menu_logo_adress {
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.header {
+}
+
+.logo {}
+
+.logo_company {
+    width: 250px;
+    height: 250px;
+    border-radius: 40%;
+}
+
+.menu {
+    margin: 0px auto;
+}
+
+.menu_header {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    max-width: 1100px;
+    margin: 0px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 1290px;
+    background-color: #00BC00;
+    padding: 32px 0px 35px 8px;
+}
+
+/* Стили для кружков на первом изображении */
+.background_image_title {
+    display: flex;
+    gap: 30px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.cricle_1 {}
+
+.circle_2 {}
+
+.circle_3 {}

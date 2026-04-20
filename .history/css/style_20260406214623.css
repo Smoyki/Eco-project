@@ -1,0 +1,151 @@
+/*font-family: 'Open Sanas', sans-serif;
+font-family: 'Oswald', sans-serif*/
+/* Делаем первоначальные настройки, подходит для любого проекта. */
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.header_menu {
+    /* min-height: 1024px; */
+    background: no-repeat;
+    /* background-size: auto; */
+    background-color: #edeeef;
+    /* background-image: url(../image/76d2a01c-fbc9-42bc-917c-588e149dd0df.jpg); */
+    background-image: url(../image/Проект_Экология.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.background_image_title {
+    min-height: 1024px;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url(../image/Проект_Экология.jpg);
+}
+
+
+.container {
+    /* max-width: 1270px; */
+    margin: 0px auto;
+    /* padding-top: 100px; */
+}
+
+.menu_logo_adress {
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-around;
+    /* align-items: center; */
+    /* padding-bottom: 100px; */
+    /* width: 1700px; */
+    /* margin: 0px auto; */
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 100px; */
+    width: 1500px;
+    margin: 0px auto;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: green;
+}
+
+.header {
+    /* background-color: #edeeef; */
+    background-color: #fff;
+    ;
+}
+
+.logo {
+    /* position: absolute; */
+}
+
+.adress {
+    color: green;
+
+}
+
+.icon_phone {
+    font-size: 40px;
+}
+
+.logo_company {
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+}
+
+.offece_adress {
+    color: #1f9fd0
+}
+
+.menu {
+    /* margin-bottom: 30px; */
+    background-color: #edeeef;
+}
+
+.menu_header {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 1410px;
+    /* background-color: #00BC00; */
+    padding: 32px 0px 35px 8px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.phone_number_block {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}
+

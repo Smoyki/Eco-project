@@ -1,0 +1,397 @@
+/*font-family: 'Open Sanas', sans-serif;
+font-family: 'Oswald', sans-serif*/
+/* Делаем первоначальные настройки, подходит для любого проекта. */
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+@font-face {
+  font-family: 'TildaSans';
+  src: url('../fonts/TildaSans-VF.ttf') format('woff2'),
+       url('../fonts/TildaSans-VF.woff') format('woff'),
+       url('../fonts/') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+
+.text-Tilda {
+    font-family: 'TildaSans', Arial, sans-serif;;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Делаем затемнение */
+.image_container {
+    /* height: 1924px; */
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    /* занимает всю ширину контейнера */
+    /* занимает всю высоту контейнера */
+    /* заполняет контейнер с обрезкой краёв */
+    /* убирает отступ снизу */
+    /* width: 800px; */
+    /* height: 780px; */
+    margin: 0px auto;
+    position: relative;
+    display: inline-block;
+    /* Ограничиваем размер контейнера — опционально */
+    /* width: 100%; */
+    /* max-width: 800px; */
+    overflow: hidden;
+
+}
+
+/* Псвевдожлемент для затемнения */
+.image_container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 1, 0.2);
+    /* Чёрный цвет с 10 % непрозрачностью */
+    pointer-events: none;
+    /* Не блокирует взаимодействие с содержимым под ним */
+    /* Плавное появление/исчезновение затемнения */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+.container {
+    /* max-width: 1270px; */
+    margin: 0px auto;
+    /* padding-top: 100px; */
+}
+
+.contacts_header {
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-around;
+    align-items: center;
+    /* padding-bottom: 100px; */
+    /* width: 1700px; */
+    /* margin: 0px auto; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: green;
+}
+
+.header {}
+
+.header_box {
+    max-width: 1700px;
+    margin: 0px auto;
+}
+
+/* Позиционируем логотип относительно левого края верхнего */
+.logo_container {
+    /* position: absolute; */
+    top: 0;
+    left: 70px;
+    width: 200px;
+    height: 200px;
+}
+
+.logo_company {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+}
+
+.adress {
+    color: green;
+
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    border: 2px solid wheat;
+}
+
+.icon_header {
+    font-size: 40px;
+}
+
+
+.project_name {
+    color: RGB(139, 197, 151);
+}
+
+.offece_adress {
+    color: #1f9fd0
+}
+
+.menu {
+    /* margin-bottom: 30px; */
+    /* background-color: #edeeef; */
+    /* border-bottom: 2px solid; */
+}
+
+.menu_header {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* max-width: 1410px; */
+    /* background-color: #00BC00; */
+    padding: 32px 0px 35px 8px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.phone_number_block {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.background_box {
+    /* width: 100%; */
+    /* занимает всю ширину контейнера */
+    /* height: 100%; */
+    /* занимает всю высоту контейнера */
+    /* object-fit: cover; */
+    /* заполняет контейнер с обрезкой краёв */
+    /* display: block; */
+    /* убирает отступ снизу */
+}
+
+background_image_container {}
+
+.title {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Стили materialize для кнопки вызова */
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+
+.waves-effect input[type="button"],
+.waves-effect input[type="reset"],
+.waves-effect input[type="submit"] {
+    border: 0;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: inherit;
+    background: none;
+}
+
+.waves-effect img {
+    position: relative;
+    z-index: -1;
+}
+
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+
+.btn,
+.btn-large,
+.btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.btn-large,
+.btn-small,
+.btn-flat {
+    font-size: 14px;
+    outline: 0;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn-flat {
+    border: none;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Inter , sans-serif'
+}
+
+.btn_style {
+    font-size: 20px;
+    border-radius: 5%;
+    padding: 0px 30px;
+    background-color: #26a69a;
+}
+
+/* Закрыл секцию */
+
+.clients_icone {
+    /* background-color: #edeeef; */
+    background-color: #fff;
+}
+
+.h2_title {
+    text-align: center
+}
+
+.icons_group {
+    display: flex;
+    justify-content: center;
+    max-width: 1410px;
+    margin: auto;
+    gap: 100px;
+}
+
+.icone_size {
+    width: 150px;
+    height: 100px;
+}
+
+.h2_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    display: block;
+    background-color: wheat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container_clients {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #1f9fd0;
+}
+
+.icone_size {
+    stroke: #000;
+    /* Цвет обводки */
+    stroke-width: 10px;
+    /* Толщина обводки */
+}
+
+.text_p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.icone_size:nth-child(2) {
+    margin-left: 20px;
+}
+
+.icone_size:nth-child(3) {
+    margin-left: 20px;
+}
