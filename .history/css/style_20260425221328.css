@@ -1028,13 +1028,13 @@ button:hover {
 }
 
 .description-text {
+    font-size: 1rem;
+    color: #2c3e44;
+    margin-bottom: 1rem;
     text-align: center;
 
 }
-.description-text i {
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 .values-highlight {
     display: flex;
     justify-content: center;
@@ -1053,9 +1053,7 @@ button:hover {
 .icone_fas {
     font-size: 25px;
 }
-.values-highlight .fas {
-    margin-right: 30px;
-}
+
 .partners-intro {
     font-size: 1.2rem;
     font-weight: 600;

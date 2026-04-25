@@ -761,7 +761,7 @@ button:hover {
 .h2-wrapper {
     text-align: center;
     margin-bottom: 24px;
-    color: gray;
+    color: #2c3e50;
     text-transform: uppercase;
 }
 
@@ -1028,13 +1028,13 @@ button:hover {
 }
 
 .description-text {
+    font-size: 1rem;
+    color: #2c3e44;
+    margin-bottom: 1rem;
     text-align: center;
+    font-size: 25px;
+}
 
-}
-.description-text i {
-    margin-right: 10px;
-    margin-left: 10px;
-}
 .values-highlight {
     display: flex;
     justify-content: center;
@@ -1047,15 +1047,11 @@ button:hover {
     text-align: center;
     background: linear-gradient(135deg, #61cc0c, #349151);
 }
-.values-highlight .bgh {
-    text-transform: uppercase;
-}
+
 .icone_fas {
     font-size: 25px;
 }
-.values-highlight .fas {
-    margin-right: 30px;
-}
+
 .partners-intro {
     font-size: 1.2rem;
     font-weight: 600;
@@ -1063,11 +1059,6 @@ button:hover {
     /* display: flex; */
     gap: 12px;
     text-align: center;
-}
-
-.partners-intro .title {
-    text-transform: uppercase;
-    color: gray;
 }
 
 .cardPack {
@@ -1214,46 +1205,17 @@ button:hover {
 
 /* футер с дополнительными гарантиями */
 .confidence-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
-}
-
-.confidence-footer span {
+    margin-top: 1.8rem;
+    font-size: 20px;
+    color: #6a7c74;
     display: flex;
-    align-items: center;
-    font-size: 17px;
-    color: gray;
-    padding: 15px 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
-}
-
-/* Выравнивание текста по правому краю для 3‑го и 6‑го элементов */
-.confidence-footer span:nth-child(3),
-.confidence-footer span:nth-child(6) {
-    justify-content: flex-end;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .confidence-footer i {
-    margin-right: 12px;
-    color: gray;
-    font-size: 20px;
-}
-
-.outro-block span {
-    background: linear-gradient(135deg, #3084bb 30%, #1a4f6e 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.confidence-footer i {
-    margin-right: 20px;
+    margin-right: 6px;
 }
 
 /* адаптивность */

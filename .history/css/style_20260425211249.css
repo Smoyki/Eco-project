@@ -761,7 +761,7 @@ button:hover {
 .h2-wrapper {
     text-align: center;
     margin-bottom: 24px;
-    color: gray;
+    color: #2c3e50;
     text-transform: uppercase;
 }
 
@@ -1028,13 +1028,13 @@ button:hover {
 }
 
 .description-text {
+    font-size: 1rem;
+    color: #2c3e44;
+    margin-bottom: 1rem;
     text-align: center;
+    font-size: 25px;
+}
 
-}
-.description-text i {
-    margin-right: 10px;
-    margin-left: 10px;
-}
 .values-highlight {
     display: flex;
     justify-content: center;
@@ -1047,15 +1047,11 @@ button:hover {
     text-align: center;
     background: linear-gradient(135deg, #61cc0c, #349151);
 }
-.values-highlight .bgh {
-    text-transform: uppercase;
-}
+
 .icone_fas {
     font-size: 25px;
 }
-.values-highlight .fas {
-    margin-right: 30px;
-}
+
 .partners-intro {
     font-size: 1.2rem;
     font-weight: 600;
@@ -1064,12 +1060,9 @@ button:hover {
     gap: 12px;
     text-align: center;
 }
-
-.partners-intro .title {
-    text-transform: uppercase;
-    color: gray;
+.partners-intro title {
+    
 }
-
 .cardPack {
     max-width: 1000px;
     margin: 0px auto
@@ -1214,33 +1207,13 @@ button:hover {
 
 /* футер с дополнительными гарантиями */
 .confidence-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
-}
-
-.confidence-footer span {
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    color: gray;
-    padding: 15px 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
-}
-
-/* Выравнивание текста по правому краю для 3‑го и 6‑го элементов */
-.confidence-footer span:nth-child(3),
-.confidence-footer span:nth-child(6) {
-    justify-content: flex-end;
-}
-
-.confidence-footer i {
-    margin-right: 12px;
-    color: gray;
+    margin-top: 1.8rem;
     font-size: 20px;
+    color: #6a7c74;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .outro-block span {
@@ -1253,7 +1226,7 @@ button:hover {
 }
 
 .confidence-footer i {
-    margin-right: 20px;
+    margin-right: 6px;
 }
 
 /* адаптивность */

@@ -83,7 +83,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .text_p4 {
@@ -94,9 +94,10 @@ body {
 
 .text_header {
     font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
     font-size: 16px;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .project_name_h1 {
@@ -114,7 +115,7 @@ body {
 
 .title {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -128,7 +129,7 @@ body {
 .service-note {
     display: block;
     font-size: 14px;
-    color: #2c3e50;
+    color: #7f8c8d;
     line-height: 1.4;
     margin-top: 15px;
 }
@@ -174,10 +175,7 @@ body {
     --dark-green: #0c950c;
 }
 
-.icon {
-    font-size: 30px;
-    color: var(--blue-color);
-}
+
 
 /* Секция с фотографией экология */
 .image-quote {
@@ -493,6 +491,13 @@ body {
     z-index: 1;
 }
 
+.title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 35px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
 .info-section {
     position: absolute;
     top: 12%;
@@ -699,7 +704,9 @@ button:hover {
     padding-top: 150px;
 }
 
-.advantage-item .icon {
+.icon {
+    font-size: 30px;
+    color: #3084bb;
     margin-bottom: 15px;
 }
 
@@ -711,7 +718,6 @@ button:hover {
     padding: 10px 10px 10px 10px;
     background-color: #ffffffb5;
     align-content: center;
-    border: 3px solid #5656ad;
 }
 
 /* Секция Партнеры */
@@ -761,8 +767,7 @@ button:hover {
 .h2-wrapper {
     text-align: center;
     margin-bottom: 24px;
-    color: gray;
-    text-transform: uppercase;
+    color: #2c3e50;
 }
 
 .section-title {
@@ -784,7 +789,7 @@ button:hover {
 .service-card {
     background: white;
     border-radius: 12px;
-    padding: 10px 20px 10px 20px;
+    padding: 25px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
     /* Равномерное распределение пространства */
@@ -792,9 +797,6 @@ button:hover {
     /* Позволяет сжиматься при необходимости */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Montserrat', Arial, sans-serif;
-    background: linear-gradient(135deg, rgba(232, 245, 232, 0.9) 0%, rgba(200, 230, 201, 0.8) 100%);
-    background: linear-gradient(135deg, #ffffff 0%, #c5e0f5 100%);
-    border: 2px solid #5656ad;
 }
 
 .service-card:hover {
@@ -802,25 +804,36 @@ button:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+.card-category {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #61cc0c;
+}
 
 .services-list {
     list-style: none;
     padding: 0;
-    margin: 0px;
-    margin-top: 10px;
 }
 
 .services-list li {
-    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #eee;
 }
 
 .services-list li:last-child {
+    border-bottom: none;
     margin-bottom: 0;
 }
 
 .service-name {
     display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .service-price {
@@ -832,7 +845,20 @@ button:hover {
 }
 
 .li_decoration {
-    min-height: 170px;
+    min-height: 150px;
+}
+
+.service-note {
+    display: block;
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.li_decoration :hover {
+    transition: border 0.3s;
+    padding: 5px 5px 5px 5px
 }
 
 /* Адаптивность для мобильных устройств */
@@ -998,7 +1024,7 @@ button:hover {
     color: #0e2a3b;
 }
 
-.title_h2 span {
+.title_h3 span {
     background: linear-gradient(135deg, #61cc0c, #308a4c);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1028,34 +1054,31 @@ button:hover {
 }
 
 .description-text {
+    font-size: 1rem;
+    color: #2c3e44;
+    margin-bottom: 1rem;
     text-align: center;
+    font-size: 25px;
+}
 
-}
-.description-text i {
-    margin-right: 10px;
-    margin-left: 10px;
-}
 .values-highlight {
     display: flex;
     justify-content: center;
     padding: 1.2rem 1.8rem;
     border-radius: 24px;
     margin: 1.8rem 0 1.8rem 0;
+    border: 1px solid #ffe6b3;
     color: white;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     background: linear-gradient(135deg, #61cc0c, #349151);
 }
-.values-highlight .bgh {
-    text-transform: uppercase;
-}
+
 .icone_fas {
     font-size: 25px;
 }
-.values-highlight .fas {
-    margin-right: 30px;
-}
+
 .partners-intro {
     font-size: 1.2rem;
     font-weight: 600;
@@ -1065,39 +1088,20 @@ button:hover {
     text-align: center;
 }
 
-.partners-intro .title {
-    text-transform: uppercase;
-    color: gray;
-}
-
-.cardPack {
-    max-width: 1000px;
-    margin: 0px auto
-}
-
 /* список компаний */
 .partners-grid {
-    display: grid;
     list-style: none;
-    grid-template-columns: repeat(2, 1fr);
     margin: 2rem 0 2rem 0;
     padding: 0;
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     text-align: center;
 }
 
 .partners-intro .title_h2 {
     margin-top: 15px;
     color: var(--dark-green);
-}
-
-.partners-intro .title_h2 {
-    background: linear-gradient(135deg, #61cc0c, #308a4c);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
 }
 
 /* каждый элемент списка: галочка | название | иконка */
@@ -1108,45 +1112,13 @@ button:hover {
     gap: 16px;
     background: #ffffff;
     padding: 18px 24px;
-    border-radius: 45px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    border: 3px solid #eaeaea;
-    cursor: pointer;
-    /* Центрирование содержимого карточки */
-    justify-self: center;
-    width: 100%;
-    max-width: 520px;
-    background: linear-gradient(to top, #ececec, #f2f2f2, #f9f9f9);
-    /* Ограничение ширины карточки */
+    min-width: 320px;
+    border: 1px solid #eaeaea;
 }
 
-.partner-item:active {
-    animation: shake 0.1s ease-in-out;
-}
-
-@keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: translateX(-2px);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: translateX(2px);
-    }
-}
 
 .partner-item:hover {
     transform: translateY(-4px);
@@ -1155,10 +1127,7 @@ button:hover {
 }
 
 
-.partner-item:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-}
+
 
 /* иконка-галочка */
 .check-icon {
@@ -1194,7 +1163,7 @@ button:hover {
 /* финальный блок */
 .outro-block {
     padding: 1rem 1.5rem;
-    background: linear-gradient(to top, #ececec, #f2f2f2, #f9f9f9);
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
     border-radius: 28px;
     font-size: 1.05rem;
     font-weight: 500;
@@ -1208,52 +1177,23 @@ button:hover {
 }
 
 .outro-block i {
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #61cc0c;
 }
 
 /* футер с дополнительными гарантиями */
 .confidence-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
-}
-
-.confidence-footer span {
+    margin-top: 1.8rem;
+    font-size: 20px;
+    color: #6a7c74;
     display: flex;
-    align-items: center;
-    font-size: 17px;
-    color: gray;
-    padding: 15px 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
-}
-
-/* Выравнивание текста по правому краю для 3‑го и 6‑го элементов */
-.confidence-footer span:nth-child(3),
-.confidence-footer span:nth-child(6) {
-    justify-content: flex-end;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .confidence-footer i {
-    margin-right: 12px;
-    color: gray;
-    font-size: 20px;
-}
-
-.outro-block span {
-    background: linear-gradient(135deg, #3084bb 30%, #1a4f6e 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.confidence-footer i {
-    margin-right: 20px;
+    margin-right: 6px;
 }
 
 /* адаптивность */
@@ -1301,14 +1241,6 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.partner-item .icon {
-    background: linear-gradient(135deg, #62b5eb 30%, #1a4f6e 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
 }
 
 .partner-item {
