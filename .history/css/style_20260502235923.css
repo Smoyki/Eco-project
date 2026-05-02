@@ -2895,7 +2895,7 @@ button:hover {
         align-items: center;
     }
 
-    .advantage-item .icon {
+    ..advantage-item .icon {
         margin-bottom: 0px;
         font-size: 24px;
     }

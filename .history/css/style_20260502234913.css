@@ -2884,20 +2884,13 @@ button:hover {
         gap: 15px;
         padding-top: 25px;
         margin-bottom: 25px;
+        max-width: 300px;
     }
 
     .advantage-item {
-        display: flex;
-        padding: 10px 10px 10px 6px;
-        background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
         max-width: 350px;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .advantage-item .icon {
-        margin-bottom: 0px;
-        font-size: 24px;
+        padding: 10px 5px 10px 5px;
+        background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
     }
 
     .activity-showcase {
@@ -2987,7 +2980,7 @@ button:hover {
 
     .partner-item {
         display: grid;
-        grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
         width: 100%;
         background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
         /* font-weight: 600; */
