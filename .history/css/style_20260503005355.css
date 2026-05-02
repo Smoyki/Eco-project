@@ -2741,9 +2741,9 @@ button:hover {
     }
 
     .partners-intro .title {
+        text-transform: uppercase;
+        color: gray;
         background: rgb(232, 237, 245);
-        padding-bottom: 15px;
-        padding-top: 15px;
     }
 }
 

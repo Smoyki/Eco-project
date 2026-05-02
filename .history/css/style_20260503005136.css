@@ -2687,6 +2687,10 @@ button:hover {
 /* Секция с отрослями */
 @media screen and (max-width: 1079px) {
     .h2-wrapper {
+        text-align: center;
+        margin-bottom: 24px;
+        color: gray;
+        text-transform: uppercase;
         background: #e8edf5;
     }
 
@@ -2738,12 +2742,6 @@ button:hover {
 
     .confidence-footer i {
         margin-right: 12px;
-    }
-
-    .partners-intro .title {
-        background: rgb(232, 237, 245);
-        padding-bottom: 15px;
-        padding-top: 15px;
     }
 }
 

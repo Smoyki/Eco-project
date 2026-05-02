@@ -1850,7 +1850,7 @@ button:hover {
     font-size: 20px;
     text-align: center;
     background: linear-gradient(135deg, #61cc0c, #349151);
-    box-shadow: 0 4px 15px rgba(137, 217, 220, 0.6);
+    
 }
 
 .values-highlight .bgh {
@@ -2686,10 +2686,6 @@ button:hover {
 
 /* Секция с отрослями */
 @media screen and (max-width: 1079px) {
-    .h2-wrapper {
-        background: #e8edf5;
-    }
-
     .title_h2 {
         font-size: 16px;
     }
@@ -2738,12 +2734,6 @@ button:hover {
 
     .confidence-footer i {
         margin-right: 12px;
-    }
-
-    .partners-intro .title {
-        background: rgb(232, 237, 245);
-        padding-bottom: 15px;
-        padding-top: 15px;
     }
 }
 

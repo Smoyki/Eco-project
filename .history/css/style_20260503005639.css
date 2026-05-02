@@ -2742,8 +2742,6 @@ button:hover {
 
     .partners-intro .title {
         background: rgb(232, 237, 245);
-        padding-bottom: 15px;
-        padding-top: 15px;
     }
 }
 
@@ -2983,9 +2981,10 @@ button:hover {
 
 /* Для наших клиентов */
 @media screen and (max-width: 768px) {
-    .description-text {
+        .description-text {
         text-align: justify;
-        width: 320px;
+        width: 100%;
+        background: rgb(232, 237, 245);
     }
 
     .values-highlight .icone_fas {
