@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />  -->
+    <title>ECO-project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+
+<body>
+    <ul id="slide-out" class="sidenav ">
+        <li> <a href="/" class="active"><i class="fas icon fa-home"></i> Главная</a></li>
+        <li> <a href="/waste-disposal"><i class="fas icon fa-recycle"></i> Утилизация отходов</a></li>
+        <li> <a href="/eco-documentation"><i class="fas icon fa-leaf"></i> Разработка экологической документации</a>
+        </li>
+        <li> <a href="/ohs-documentation"><i class="fas icon fa-hard-hat"></i> Разработка документации по охране
+                труда</a>
+        </li>
+        <li> <a href="/lab"><i class="fas icon fa-flask"></i> Лаборатория</a></li>
+        <li> <a href="/contacts"><i class="fas icon fa-map-marker-alt"></i> Контакты</a></li>
+        <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Наши контакты</a></li>
+        <!-- <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+        <div class="interactive-icons"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <div class="contact-phones">
+            <a href="tel:+79993333945" class="no-underline link_color" target="_blank" rel="noreferrer noopener">+7
+                (938) 100-73-11</a>
+            <a href="tel:+79993333945" class="no-underline link_color" target="_blank" rel="noreferrer noopener">+7
+                (938) 163-60-01</a>
+            <a href="tel:+79993333945" class="no-underline link_color" target="_blank" rel="noreferrer noopener">+7
+                (928) 902-00-18</a>
+        </div>
+        <li><a href="#!" class="sidenav-close"><i class="fas icon fa-times" aria-hidden="true"></i>Закрыть</a></li>
+    </ul>
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <header class="header">
+        <div class="header_box">
+            <div class="contacts_header">
+                <div class="header-brand">
+                    <div class="logo_container"><img src="image/3 строчки.jpg" alt="" class="logo_company"></div>
+                    <h2 class="project_name_h1"><span>Группа Компаний "ПЕРВЫЙ"</span></h2>
+                </div>
+                <div class="navBurger">
+                    <a class="burger sidenav-trigger" data-target="slide-out">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="icon_header"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="contacts_inner_box">
+
+                        <p class="text_header"><a href="tel:+79993333945" class="no-underline link_color"
+                                target="_blank" rel="noreferrer noopener">+7 (938) 100-73-11</a></p>
+                        <p class="text_header"><a href="tel:+79993333945" class="no-underline link_color"
+                                target="_blank" rel="noreferrer noopener">+7 (938) 163-60-01</a></p>
+                        <p class="text_header"><a href="tel:+79993333945" class="no-underline link_color"
+                                target="_blank" rel="noreferrer noopener">+7 (928) 902-00-18</a></p>
+
+                    </div>
+                    <div class="icon_header"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="contacts_inner_box">
+                        <p class="text_header"><a href="mailto:info@kmeco.ru"
+                                class="no-underline link_color">info@eco1.pro</a></p>
+                        <p class="text_header"><a href="mailto:info@kmeco.ru"
+                                class="no-underline link_color">ato@eco1.pro</a></p>
+                    </div>
+                    <div class="material-placeholder qr-code"><img class="materialboxed" width="650"
+                            src="image/qr_code.png"></div>
+                    <button id="callButton" class="call-button text_header">Позвонить нам</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-nav">
+        <div class="container_nav">
+            <div class="menu">
+                <ul class="menu_header menu_nav_text">
+                    <li class="li_item">Главная</li>
+                    <li class="li_item">Утилизация отходов</li>
+                    <li class="li_item">Разработка экологической документации</li>
+                    <li class="li_item">Разработка документации по охране труда</li>
+                    <li class="li_item">Лаборатория</li>
+                    <li class="li_item">Контакты</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="image-quote">
+        <div class="container">
+            <div class="image_container">
+                <div class="overlay-text">
+                    <h1 class="title_ecology">Все, что нужно у нас: Экология, Охрана Труда, Утилизация отходов
+                    </h1>
+                </div>
+                <div class="feedback-form">
+                    <div class="contact-info-title">
+                        <h2 class="menu_nav_text text_aline">Получите расчет или коммерческое предложение бесплатно</h2>
+                        <p class="text_p2">Можете позвонить нам по номеру <br><a href="tel:+79993333945"
+                                class="no-underline text_p" target="_blank" rel="noreferrer noopener">+7 (900)
+                                295-37-10</a>
+                            или заполните форму ниже</p>
+                    </div>
+
+                    <form id="feedbackForm">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+
+                        <div class="phone-container">
+                            <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="agreeCheckbox" required>
+                            <label for="agreeCheckbox" class="text_p4">Я согласен с
+                                <a href="#" target="_blank">политикой</a>
+                                конфиденциальности и обработки персональных данных
+                            </label>
+                        </div>
+
+                        <button type="submit" class="checkbox_button text_p2">Получить расчет</button>
+                    </form>
+                </div>
+                <script src="Js/main.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about_info">
+            <div class="container">
+                <div class="about_flex">
+                    <div class="abot_item">
+                        <h3 class="about_h3">450+</h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Реализованных проектов по экологии и охране труда</h2>
+                        </div>
+                    </div>
+                    <div class="abot_item">
+                        <h3 class="about_h3">220+</h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Довольных клиентов по всей России</h2>
+                        </div>
+                    </div>
+                    <div class="abot_item">
+                        <h3 class="about_h3">99,9%</h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Проектов успешно проходят согласование</h2>
+                        </div>
+                    </div>
+                    <div class="abot_item">
+                        <h3 class="about_h3">100%</h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Лицензионная утилизация отходов I–V классов</h2>
+                        </div>
+                    </div>
+                    <div class="abot_item">
+                        <h3 class="about_h3">0</h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Штрафов у клиентов после нашей документации</h2>
+                        </div>
+                    </div>
+                    <div class="abot_item">
+                        <h3 class="about_h3">С 2021 года </h3>
+                        <div class="rectangle"></div>
+                        <div class="block_text">
+                            <h2 class="h2_about">Экспертиза в экологии и охране труда</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discover-benefits">
+        <div class="box_container">
+            <div class="block_advantages">
+                <h2 class="h2_advantages">Наши <span>преимущества</span></h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-warehouse"></i></div>
+                        <p class="text_p5">Собственный автопарк для вывоза отходов</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-map-marked-alt"></i></div>
+                        <p class="text_p5">Работаем по всей РФ — удалённо и с выездом</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-tag"></i></div>
+                        <p class="text_p5">Фиксированная цена — без скрытых доплат</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-key"></i></div>
+                        <p class="text_p5">Согласование под ключ без участия клиента</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-exclamation-triangle"></i></div>
+                        <p class="text_p5">Помогаем даже после предписания — срочно</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-people-roof"></i></div>
+                        <p class="text_p5">Экологи, специалисты по ОТ, лицензированные утилизаторы в штате — не
+                            фриланс
+                        </p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-calendar-check"></i></div>
+                        <p class="text_p5">Документация за 3 дня — при срочной необходимости</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-comments"></i></div>
+                        <p class="text_p5">Бесплатная консультация перед началом работ</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-certificate"></i></div>
+                        <p class="text_p5">Гарантия прохождения проверок Росприроднадзора</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="icWrap"><i class="icon fa-solid fa-cloud-upload-alt"></i></div>
+                        <p class="text_p5">Онлайн-отчётность — всё сами, вы только подписываете</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-pricing">
+                <div class="h2-wrapper">
+                    <h2 class="h2_advantages">Сравните сами <span>Наши цены - прозрачные</span></h2>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1-я карточка -->
+                            <div class="swiper-slide">
+                                <div class="service-card card_1">
+                                    <div class="card-category"></div>
+                                    <ul class="services-list">
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Проект санитарно‑защитной зоны (СЗЗ)
+                                            </h4>
+                                            <p class="service-price">от 69 990 ₽</p>
+                                            <p class="h2_about">Цена варьируется от класса опасности объекта и его
+                                                особенностей.
+                                            </p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Специальная оценка условий труда (СОУТ)
+                                            </h4>
+                                            <p class="service-price">от 390 ₽</p>
+                                            <p class="h2_about">Зависит от количества и специфики рабочих мест.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Транспортирование, утилизация,
+                                                обезвреживание</h4>
+                                            <p class="service-price">Расчёт за 1 час</p>
+                                            <p class="h2_about">Зависит от типа и объёма отходов.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 2-я карточка -->
+                            <div class="swiper-slide">
+                                <div class="service-card card_2">
+                                    <div class="card-category"></div>
+                                    <ul class="services-list">
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Оценка профессиональных рисков</h4>
+                                            <p class="service-price">от 390 ₽</p>
+                                            <p class="h2_about">Зависит от количества опасных и вредных факторов для
+                                                каждой
+                                                профессии.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Паспорта отходов I–IV классов +
+                                                протоколы
+                                                КХА</h4>
+                                            <p class="service-price">от 1 490 ₽</p>
+                                            <p class="h2_about">Стоимость зависит от класса опасности отхода и
+                                                объёма
+                                                лабораторных исследований.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Оценка воздействия на водные
+                                                биологические
+                                                ресурсы
+                                                (ОВБР)</h4>
+                                            <p class="service-price">от 109 990 ₽</p>
+                                            <p class="h2_about">Цена зависит от количества водных объектов и услуг
+                                                внутри
+                                                оценки.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 3-я карточка -->
+                            <div class="swiper-slide">
+                                <div class="service-card card_3">
+                                    <div class="card-category"></div>
+                                    <ul class="services-list">
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Проект зон санитарной охраны (ЗСО)</h4>
+                                            <p class="service-price">от 69 990 ₽</p>
+                                            <p class="h2_about">Цена зависит от количества водоисточников и
+                                                сложности
+                                                объекта.
+                                            </p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Инвентаризация источников выбросов</h4>
+                                            <p class="service-price">от 5 990 ₽</p>
+                                            <p class="h2_about">Зависит от количества источников (ИЗАВ) и
+                                                необходимости
+                                                проведения инструментальных замеров.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Комплексное экологическое разрешение
+                                                (КЭР)
+                                            </h4>
+                                            <p class="service-price">Расчёт за 1 час</p>
+                                            <p class="h2_about">Цена зависит от масштаба производства и наличия
+                                                готовой
+                                                экологической документации.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 4-я карточка -->
+                            <div class="swiper-slide">
+                                <div class="service-card card_4">
+                                    <div class="card-category"></div>
+                                    <ul class="services-list">
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Сбор и вывоз отходов I–IV класса</h4>
+                                            <p class="service-price">от 2 990 ₽</p>
+                                            <p class="h2_about">Зависит от объёма, класса опасности и удалённости
+                                                объекта.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Проект нормативов допустимых выбросов
+                                                (НДВ/ПДВ)
+                                            </h4>
+                                            <p class="service-price">от 35 990 ₽</p>
+                                            <p class="h2_about">Цена зависит от количества источников выбросов.</p>
+                                        </li>
+                                        <li class="li_decoration">
+                                            <h4 class="service-name text_header">Система управления охраной труда (СУОТ)
+                                            </h4>
+                                            <p class="service-price">от 5 990 ₽</p>
+                                            <p class="h2_about">Цена зависит от количества сотрудников и объёма
+                                                работ по
+                                                оценке
+                                                условий труда.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Стрелки навигации -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- Пагинация (точки) -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section-with-icons">
+                <img src="image/logo_cooperate/список.jpg" alt="Описание" class="responsive-image">
+                <div class="service-list">
+                    <h3 class="title"><span>Не</span> нашли свою услугу? <br> У нас <span class="special">более 50+
+                        </span>услуг</h3>
+                    <div class="discount_text">
+                        <p>
+                            <i class="fas fa-check"></i> Подберем решение под ваш случай
+                        </p>
+                        <p>
+                            <i class="fas fa-check"></i> Работаем быстро, законно и прозрачно
+                        </p>
+                        <a href="#contact" class="cta-button">
+                            <i class="fas fa-paper-plane"></i> Оставить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="confidentiality-section">
+        <div class="container">
+            <div class="confidentiality-wrapper">
+
+                <div class="title_clients title_h3 ">
+                    НАШИ КЛИЕНТЫ ЦЕНЯТ КОНФИДЕНЦИАЛЬНОСТЬ <br>
+                    <span>И МЫ ТОЖЕ</span>
+                </div>
+                <div class="subtitle_clients">
+                    С нами работают предприятия, которые платят налоги, создают рабочие места и заботятся об
+                    экологии.<br>
+                    Некоторые из них — лидеры своих отраслей. Остальные — просто умные бизнесмены, которые не ждут
+                    штрафов.
+                </div>
+                <div class="highlight title">
+                    Ответственность, прозрачность и экологичность — фундамент нашей совместной работы.
+                </div>
+                <div class="partners-title">СРЕДИ НАШИХ ПАРТНЁРОВ</div>
+                <div class="partners-subtitle">Работаем с лидерами отраслей по всей России</div>
+                <div class="grid">
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-factory"></i></div>
+                        <p>Нефтепромышленные предприятия</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-airplane"></i></div>
+                        <p>Авиационное производство</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card">
+                            <i class="ph ph-wrench"></i>
+                        </div>
+                        <p>Металлургия и горнодобыча</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-lightning"></i></div>
+                        <p>Электроэнергетика</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-gear"></i></div>
+                        <p>Машиностроение</p>
+                    </div>
+
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-flask"></i></div>
+                        <p>Химическая промышленность</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card">
+                            <i class="ph ph-buildings"></i>
+                        </div>
+                        <p>Строительство и инфраструктура</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card">
+                            <i class="ph ph-leaf"></i>
+                        </div>
+                        <p>Агропром и пищевая промышленность</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-recycle"></i></div>
+                        <p>Мусорные полигоны и переработка</p>
+                    </div>
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-bank"></i></div>
+                        <p>Бюджетные учреждения и госструктуры</p>
+                    </div>
+
+                </div>
+                <div class="card_company"
+                    style="margin-top:20px; max-width:300px; margin-left:auto; margin-right:auto;">
+                    <div class="icon"><i class="ph ph-dots-three-outline"></i></div>
+                    <p>и другие</p>
+                </div>
+                <div class="trust">
+                    <span>Их объединяет одно: они выбрали порядок вместо штрафов.</span><br>
+                    А мы помогли им в этом — без лишней огласки.
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="ph ph-lock"></i>
+                        <p>Полная конфиденциальность проектов</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-pencil-simple"></i>
+                        <p>Публикация только с письменного согласия</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-chart-line-up"></i>
+                        <p>Безопасность и доверие</p>
+                    </div>
+                </div>
+                <div class="note">
+                    Их не видно на нашем сайте, но они видят нас в своих документах, отчётах и спокойных проверках.
+                    И
+                    этого
+                    достаточно.
+                </div>
+
+                <div class="cta">
+                    ГРОМКИХ ИМЁН НЕ БУДЕТ — БУДЕТ ПОРЯДОК
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form media-form-section">
+        <div class="container_form">
+            <div class="image-and-feedbac">
+                <div class="offece_foto"><img src="image/Офис_эко-проект.jpg" alt="" class="eco_pjocet"></div>
+                <div class="cta-section">
+                    <h2 class="title_h2">Получите расчет или коммерческое предложение</h2>
+                    <p>Можете позвонить нам <span>+7 (900) 295-37-10</span> или написать на почту
+                        <span>info@yandex.ru</span>, а так же заполнить форму ниже, мы с вами свяжемся
+                    </p>
+                    <form>
+                        <div class="form_inner">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="email" placeholder="Ваш e-mail">
+                        </div>
+                        <textarea placeholder="Сообщение"></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-column--left">
+                <p>ОГРН 1216100001952</p>
+                <p>ИНН 6165227886</p>
+                <p>344092, Ростовская область, г. Ростов‑на‑Дону, пр‑кт Космонавтов, зд. 2/2, ком. 2</p>
+            </div>
+            <div class="footer-column footer-column--right">
+                <ul class="footer-links">
+                    <li><a href="#">Политика конфиденциальности и использования файлов «Cookie»</a></li>
+                    <li><a href="#">Согласие на обработку файлов cookies</a></li>
+                    <li><a href="#">Политика в отношении обработки персональных данных</a></li>
+                    <li><a href="#">Согласие на обработку персональных данных</a></li>
+                    <li><a href="#">Пользовательское соглашение!!!!</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="splide" id="slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="card_company">
+                        <div class="icon_card"><i class="ph ph-factory"></i></div>
+                        <p>Нефтепромышленные предприятия</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    
+                </li>
+                <li class="splide__slide">3</li>
+                <li class="splide__slide">4</li>
+                <li class="splide__slide">5</li>
+                <li class="splide__slide">6</li>
+                <li class="splide__slide">7</li>
+                <li class="splide__slide">8</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="scrollbar" id="scrollbar">
+        <div class="scrollbar__thumb" id="thumb"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Js/Swiper.js"></script>
+    <script src="Js/materialize.js"></script>
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
+    <!-- AutoScroll extension -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="Js/Splide.js"></script>
+</body>
+
+</html>
