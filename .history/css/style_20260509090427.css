@@ -3105,6 +3105,9 @@ button:hover {
 
 /* Секция поверх с текстом */
 @media screen and (max-width: 599px) {
+    .title_ecology {
+        font-size: 21px;
+    }
 
     .overlay-text {
         top: 15%;

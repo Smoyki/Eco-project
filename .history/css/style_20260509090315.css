@@ -3105,6 +3105,9 @@ button:hover {
 
 /* Секция поверх с текстом */
 @media screen and (max-width: 599px) {
+    .title_ecology {
+        font-size: 21px;
+    }
 
     .overlay-text {
         top: 15%;
@@ -3118,7 +3121,7 @@ button:hover {
     }
 
     .title_ecology {
-        font-size: 25px;
+        font-size: 21px;
     }
 }
 
@@ -3234,7 +3237,7 @@ button:hover {
     }
 
     .advantage-item {
-        max-width: 320px;
+        max-width: 300px;
         margin: 0px auto;
         gap: 25px;
     }
