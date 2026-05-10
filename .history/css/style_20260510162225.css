@@ -2182,10 +2182,6 @@ button:hover {
     border: 1px solid #80808063
 }
 
-.icone_splide p {
-    text-align: left;
-}
-
 .card_company:hover {
     transform: translateY(-5px);
 }
@@ -3205,7 +3201,7 @@ button:hover {
     }
 
     .subtitle_clients {
-        text-align: left;
+        text-align: center;
     }
 
     .confidentiality-wrapper .title {
@@ -3289,8 +3285,8 @@ button:hover {
 /* header */
 @media screen and (max-width: 599px) {
     .logo_container {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .project_name_h1 {
@@ -3423,7 +3419,7 @@ button:hover {
 
     .abot_item .about_icon {
         height: 40px;
-        width: 40px;
+        width: 0px;
     }
 
     .overlay-text {
@@ -3501,7 +3497,7 @@ button:hover {
     }
 
     .splide {
-        max-width: 340px;
+        max-width: 240px;
         margin: 0 auto;
     }
 

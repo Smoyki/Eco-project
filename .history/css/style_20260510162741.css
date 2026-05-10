@@ -2182,10 +2182,6 @@ button:hover {
     border: 1px solid #80808063
 }
 
-.icone_splide p {
-    text-align: left;
-}
-
 .card_company:hover {
     transform: translateY(-5px);
 }
@@ -3205,7 +3201,7 @@ button:hover {
     }
 
     .subtitle_clients {
-        text-align: left;
+        text-align: center;
     }
 
     .confidentiality-wrapper .title {
@@ -3289,8 +3285,10 @@ button:hover {
 /* header */
 @media screen and (max-width: 599px) {
     .logo_container {
+          .logo_container {
         width: 80px;
         height: 80px;
+    }
     }
 
     .project_name_h1 {

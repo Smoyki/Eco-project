@@ -2181,11 +2181,9 @@ button:hover {
     transition: 0.3s;
     border: 1px solid #80808063
 }
-
 .icone_splide p {
-    text-align: left;
+    
 }
-
 .card_company:hover {
     transform: translateY(-5px);
 }
