@@ -3464,7 +3464,7 @@ button:hover {
     }
 
     .confidentiality-section .container {
-        /* max-width: 450px; */
+        max-width: 450px;
         margin: 0px auto;
     }
 
@@ -3551,7 +3551,7 @@ button:hover {
     .li_decoration {
         width: 280px;
         margin-left: -15px;
-        margin-bottom: 0px;
+        mb
     }
 
 

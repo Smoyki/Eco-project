@@ -2556,7 +2556,7 @@ button:hover {
 @media screen and (max-width: 1600px) {
 
     .overlay-text {
-        top: 25%;
+        top: 11%;
     }
 
     .image-quote {
@@ -2570,14 +2570,11 @@ button:hover {
     .feedback-form {
         top: 9%;
         left: 3%;
+        ;
     }
 
     .title_ecology {
         font-size: 35px;
-    }
-
-    .text_title_ecology {
-        width: 1000px;
     }
 }
 
@@ -3464,7 +3461,7 @@ button:hover {
     }
 
     .confidentiality-section .container {
-        /* max-width: 450px; */
+        max-width: 450px;
         margin: 0px auto;
     }
 
@@ -3550,8 +3547,7 @@ button:hover {
 
     .li_decoration {
         width: 280px;
-        margin-left: -15px;
-        margin-bottom: 0px;
+        margin-left: -30px;
     }
 
 

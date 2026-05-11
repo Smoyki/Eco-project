@@ -3464,7 +3464,7 @@ button:hover {
     }
 
     .confidentiality-section .container {
-        /* max-width: 450px; */
+        max-width: 450px;
         margin: 0px auto;
     }
 

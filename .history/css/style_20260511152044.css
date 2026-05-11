@@ -2556,7 +2556,7 @@ button:hover {
 @media screen and (max-width: 1600px) {
 
     .overlay-text {
-        top: 25%;
+        top: 11%;
     }
 
     .image-quote {
@@ -2569,15 +2569,11 @@ button:hover {
 
     .feedback-form {
         top: 9%;
-        left: 3%;
+        left: 1%;
     }
 
     .title_ecology {
         font-size: 35px;
-    }
-
-    .text_title_ecology {
-        width: 1000px;
     }
 }
 
@@ -3464,7 +3460,7 @@ button:hover {
     }
 
     .confidentiality-section .container {
-        /* max-width: 450px; */
+        max-width: 450px;
         margin: 0px auto;
     }
 
@@ -3550,8 +3546,7 @@ button:hover {
 
     .li_decoration {
         width: 280px;
-        margin-left: -15px;
-        margin-bottom: 0px;
+        margin-left: -30px;
     }
 
 
@@ -3612,7 +3607,7 @@ button:hover {
 
 /* Стили для экранов 320 px */
 /* Стили для шапкм */
-@media (min-width: 300px) and (max-width: 360px) {
+@media (min-width: 300px) and (max-width: 350px) {
     .project_name_h1 {
         font-family: "Montserrat", sans-serif;
         font-size: 12px;
@@ -3625,7 +3620,7 @@ button:hover {
 }
 
 /* Стили для текста */
-@media (min-width: 300px) and (max-width: 360px) {
+@media (min-width: 300px) and (max-width: 350px) {
     .overlay-text {
         top: 15%;
         left: 50%;
@@ -3653,7 +3648,7 @@ button:hover {
 }
 
 /* Стили с картчоками width320px */
-@media (min-width: 300px) and (max-width: 360px) {
+@media (min-width: 300px) and (max-width: 350px) {
     .advantage-item {
         max-width: 270px;
         margin: 0px auto;
@@ -3702,7 +3697,7 @@ button:hover {
 }
 
 /* 320px для клиентов */
-@media (min-width: 300px) and (max-width: 360px) {
+@media screen and (min-width: 380px) {
     .confidentiality-section .container {
         max-width: 320px;
         margin: 0px auto;
@@ -3731,7 +3726,7 @@ button:hover {
 }
 
 /* 320px форма с обратной связью */
-@media (min-width: 300px) and (max-width: 360px) {
+@media screen and (min-width: 380px) {
     .container_form {
         max-width: 300px;
         margin: 0px auto;

@@ -2556,7 +2556,7 @@ button:hover {
 @media screen and (max-width: 1600px) {
 
     .overlay-text {
-        top: 25%;
+        top: 11%;
     }
 
     .image-quote {
@@ -2569,15 +2569,11 @@ button:hover {
 
     .feedback-form {
         top: 9%;
-        left: 3%;
+        left: 1%;
     }
 
     .title_ecology {
         font-size: 35px;
-    }
-
-    .text_title_ecology {
-        width: 1000px;
     }
 }
 
@@ -3464,12 +3460,12 @@ button:hover {
     }
 
     .confidentiality-section .container {
-        /* max-width: 450px; */
+        max-width: 450px;
         margin: 0px auto;
     }
 
     .service-card {
-        margin-left: 0px;
+       margin-left: 0px; 
     }
 
 }
@@ -3550,8 +3546,7 @@ button:hover {
 
     .li_decoration {
         width: 280px;
-        margin-left: -15px;
-        margin-bottom: 0px;
+        margin-left: -30px;
     }
 
 
@@ -3612,128 +3607,5 @@ button:hover {
 
 /* Стили для экранов 320 px */
 /* Стили для шапкм */
-@media (min-width: 300px) and (max-width: 360px) {
-    .project_name_h1 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-    }
-
-    .project_name_h1 span {
-        font-size: 24px;
-    }
-}
-
-/* Стили для текста */
-@media (min-width: 300px) and (max-width: 360px) {
-    .overlay-text {
-        top: 15%;
-        left: 50%;
-        width: 350px;
-    }
-
-    .text_title_ecology {
-        width: 300px;
-        text-align: left;
-    }
-
-    .inner_box_pl {
-        max-width: 300px;
-        margin: 0px auto;
-    }
-
-    .abot_item .about_icon {
-        height: 20px;
-        width: 20px;
-    }
-
-    .abot_item .about_icon i {
-        font-size: 12px;
-    }
-}
-
-/* Стили с картчоками width320px */
-@media (min-width: 300px) and (max-width: 360px) {
-    .advantage-item {
-        max-width: 270px;
-        margin: 0px auto;
-        gap: 25px;
-    }
-
-    .box_container {
-        max-width: 300px;
-    }
-
-    .services-pricing {
-        max-width: 300px;
-        margin: 0px auto;
-        order: 2;
-    }
-
-    .li_decoration {
-        width: 250px;
-        margin-left: -23px;
-    }
-
-    .cta-section-with-icons h3 {
-        font-size: 16px;
-    }
-
-    .cta-section-with-icons p {
-        font-size: 12px;
-    }
-
-    .cta-button {
-        width: 250px;
-        font-size: 16px;
-        padding: 5px 10px 5px 10px;
-    }
-
-    .service-list {
-        left: -3%;
-        top: -33%;
-        max-width: 300px;
-    }
-
-    .cta-section-with-icons {
-        max-width: 300px;
-        height: 300px;
-    }
-}
-
-/* 320px для клиентов */
-@media (min-width: 300px) and (max-width: 360px) {
-    .confidentiality-section .container {
-        max-width: 320px;
-        margin: 0px auto;
-    }
-
-    .confidentiality-wrapper .title_h3 {
-        font-size: 16px;
-    }
-
-    .subtitle_clients {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .feature {
-        max-width: 250px;
-    }
-
-    .feature {
-        margin-left: 10px;
-    }
-
-    .cta {
-        font-size: 16px;
-    }
-}
-
-/* 320px форма с обратной связью */
-@media (min-width: 300px) and (max-width: 360px) {
-    .container_form {
-        max-width: 300px;
-        margin: 0px auto;
-    }
+@media screen and (max-width: 320px) {
 }
