@@ -4005,14 +4005,5 @@ button:hover {
 }
 
 @media screen and (max-width: 380px) {
-    .consultation-sidenav .sidenav-close_box {
-        position: absolute;
-        left: 48%;
-        top: 1%;
-    }
 
-    .consultation {
-        top: 12%;
-        left: 5%;
-    }
 }

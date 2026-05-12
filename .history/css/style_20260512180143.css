@@ -3268,12 +3268,6 @@ button:hover {
 /* Стили для текста на цитате */
 /* Стили для секции кнопки обратной формы 1077px */
 @media screen and (max-width: 1077px) {
-    .support-box {
-        display: none
-    }
-}
-
-@media screen and (max-width: 1077px) {
     .title_ecology {
         font-size: 30px;
     }
@@ -3746,14 +3740,14 @@ button:hover {
 @media screen and (max-width: 500px) {
     .consultation {
         top: 12%;
-        left: 10%;
+        left: 7%;
     }
 }
 
 @media screen and (max-width: 500px) {
     .consultation-sidenav .sidenav-close_box {
         position: absolute;
-        left: 54%;
+        left: 48%;
         top: 1%;
     }
 }
@@ -4001,18 +3995,5 @@ button:hover {
     .container_form {
         max-width: 300px;
         margin: 0px auto;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .consultation-sidenav .sidenav-close_box {
-        position: absolute;
-        left: 48%;
-        top: 1%;
-    }
-
-    .consultation {
-        top: 12%;
-        left: 5%;
     }
 }
