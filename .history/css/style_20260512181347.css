@@ -3267,6 +3267,7 @@ button:hover {
 /* Стили для размеров экранов 1077px */
 /* Стили для текста на цитате */
 
+
 @media screen and (max-width: 1077px) {
     .title_ecology {
         font-size: 30px;
