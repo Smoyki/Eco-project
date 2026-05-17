@@ -1188,7 +1188,7 @@ nav ul a.btn-floating>.material-icons {
 
 .consultation h2 {
     color: white;
-    font-size: 19px;
+    font-size: 24px;
     text-align: center;
     font-family: 'Inter', Arial, sans-serif;
     margin-bottom: 15px;
@@ -1209,15 +1209,15 @@ nav ul a.btn-floating>.material-icons {
 
 .consultation p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Inter', Arial, sans-serif;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .consultation .text_p4 {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -1271,9 +1271,6 @@ nav ul a.btn-floating>.material-icons {
     border-bottom-right-radius: 17px;
     border-bottom-left-radius: 17px;
     padding: 10px 10px;
-    max-width: 450px;
-    width: 100%;
-
 }
 
 .support-box .icon_header {
@@ -1281,7 +1278,7 @@ nav ul a.btn-floating>.material-icons {
 }
 
 .support-box h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
     color: gray;
     font-family: 'Inter';
@@ -3676,77 +3673,20 @@ button:hover {
 /* Форма обртаной связи 768 px позиционирование */
 @media screen and (max-width: 768px) {
     .consultation {
-        top: 0%;
+        top: 5%;
         left: 9%;
     }
 
     .consultation-sidenav .sidenav-close_box {
         position: absolute;
-        left: 2%;
+        left: 55%;
         top: 1%;
-        z-index: 500;
     }
 
     .consultation-sidenav_menu .sidenav-close_box {
         position: absolute;
         margin-top: 28px;
         left: 65%;
-    }
-
-    .consultation .logo_container {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 5px;
-        margin-top: 15px;
-    }
-
-    .support-box .no-underline {
-        text-decoration: none;
-        color: green;
-        font-size: 12px;
-    }
-
-    .support-box {
-        padding: 5px 5px;
-        max-width: 300px;
-        width: 100%;
-    }
-
-    .support-box h3 {
-        font-size: 16px;
-        margin-bottom: 15px;
-        color: gray;
-        font-family: 'Inter';
-    }
-
-}
-
-/* Телефон со скроллом , форма 768px */
-@media screen and (max-width: 768px) {
-    .support-details {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-    }
-
-    .support_content .no-underline {
-        text-decoration: none;
-        color: #222222;
-        font-size: 12px;
-        font-family: 'Inter', Arial, sans-serif;
-    }
-
-    .support_content p {
-        font-size: 12px;
-        font-weight: 600;
-        font-family: 'Inter', Arial, sans-serif;
-    }
-
-    .support-details .icon_header {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
     }
 }
 
@@ -3912,6 +3852,15 @@ button:hover {
     }
 }
 
+@media screen and (max-height: 728px) {
+    .schedule {
+        display: none
+    }
+    .support-box__info p:nth-child(2),
+    .support-box__info p:nth-child(3) {
+        display:none
+    }
+}
 
 /* Стили для маленьких экранов */
 /* header */
@@ -4039,7 +3988,20 @@ button:hover {
 }
 
 /* Стили для обратной форма с боку позиционирование */
+@media screen and (max-width: 500px) {
+    .consultation {
+        top: 10%;
+        left: 10%;
+    }
+}
 
+@media screen and (max-width: 500px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 54%;
+        top: 1%;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .inner_box_pl {
@@ -4288,14 +4250,14 @@ button:hover {
 }
 
 @media screen and (max-width: 380px) {
-
-    .support-box_contacts {
-        max-width: 320px;
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 48%;
+        top: 1%;
     }
 
-    .consultation-sidenav_menu .sidenav-close_box {
-        position: absolute;
-        margin-top: 28px;
-        left: 58%;
+    .consultation {
+        top: 12%;
+        left: 5%;
     }
 }

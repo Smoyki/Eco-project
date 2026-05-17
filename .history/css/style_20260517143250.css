@@ -1271,9 +1271,6 @@ nav ul a.btn-floating>.material-icons {
     border-bottom-right-radius: 17px;
     border-bottom-left-radius: 17px;
     padding: 10px 10px;
-    max-width: 450px;
-    width: 100%;
-
 }
 
 .support-box .icon_header {
@@ -3682,9 +3679,8 @@ button:hover {
 
     .consultation-sidenav .sidenav-close_box {
         position: absolute;
-        left: 2%;
+        left: 55%;
         top: 1%;
-        z-index: 500;
     }
 
     .consultation-sidenav_menu .sidenav-close_box {
@@ -3718,36 +3714,16 @@ button:hover {
         color: gray;
         font-family: 'Inter';
     }
-
+    
 }
-
 /* Телефон со скроллом , форма 768px */
 @media screen and (max-width: 768px) {
     .support-details {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-    }
-
-    .support_content .no-underline {
-        text-decoration: none;
-        color: #222222;
-        font-size: 12px;
-        font-family: 'Inter', Arial, sans-serif;
-    }
-
-    .support_content p {
-        font-size: 12px;
-        font-weight: 600;
-        font-family: 'Inter', Arial, sans-serif;
-    }
-
-    .support-details .icon_header {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 15px; */
+}
 }
 
 
@@ -4040,6 +4016,13 @@ button:hover {
 
 /* Стили для обратной форма с боку позиционирование */
 
+@media screen and (max-width: 500px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 54%;
+        top: 1%;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .inner_box_pl {
@@ -4288,6 +4271,11 @@ button:hover {
 }
 
 @media screen and (max-width: 380px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 48%;
+        top: 1%;
+    }
 
     .support-box_contacts {
         max-width: 320px;
