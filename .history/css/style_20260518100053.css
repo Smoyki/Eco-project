@@ -3678,12 +3678,12 @@ button:hover {
 @media screen and (max-width: 768px) {
     .consultation {
         top: 0%;
-        left: 4%;
+        left: 9%;
     }
 
     .consultation-sidenav .sidenav-close_box {
         position: absolute;
-        left: 50%;
+        left: 56%;
         top: 1%;
         z-index: 500;
     }
@@ -4312,4 +4312,7 @@ button:hover {
         left: 56%;
         top: 1%;
     }
+}
+
+
 }
