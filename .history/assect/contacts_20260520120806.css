@@ -1,0 +1,460 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.container_contacts {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+/* Секция с картами */
+.ofecee_adress {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.contacts_company {
+    display: flex;
+}
+
+.offece_card {
+    max-width: 600px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #80808024;
+    border-radius: 2%;
+}
+
+.icone_container_text {
+    max-width: 290px;
+    width: 100%;
+}
+
+.ofecee_adress .fa {
+    font-size: 30px;
+    color: #5d9e2c;
+}
+
+.icone_container_text h2 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.icone_container_text p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+
+.title_map {
+    display: flex;
+    margin-left: 130px;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.title_map .fas {
+    font-size: 35px;
+    color: #5d9e2c;
+}
+
+.title_map h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.contacts_title {
+    margin-left: 25px;
+}
+
+/* Секция с телефонами */
+.title_h2 {
+    margin-bottom: 15px;
+}
+
+
+
+.department-card {
+    display: flex;
+    border: 2px solid #80808024;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0px auto;
+}
+
+.icon-block {
+    display: flex;
+    font-size: 43px;
+    margin-right: 10px;
+    background: #e5efe2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-block .fas {
+    background: #5d9e2c;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.contact-numbers {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.contact-numbers a {
+    text-decoration: none;
+    color: #5d9e2c;
+    font-family: 'Russo One', Arial, sans-serif;
+}
+
+.max {
+    width: 70px;
+}
+
+.contact-buttons {
+    max-width: 300px;
+    width: 100%;
+}
+
+.contact-buttons button {
+    display: flex;
+    gap: 15px;
+    padding: 5px 20px 5px 20px;
+    background: #ffffff;
+    align-items: center;
+    border: 2px solid #475efa;
+    color: #475efa;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    color: #475efa;
+    font-size: 19px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.department-info {
+    max-width: 450px;
+    width: 100%;
+}
+
+.dept-title {
+    font-size: 19px;
+    font-family: 'Domine';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.dept-description {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 25px;
+    font-weight: 500;
+}
+
+/* Секиця с графиком работы */
+.image_and_feedbac {}
+
+.contacts_hours {
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.image_and_feedbac {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.cta-section_contacts {
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+    max-width: 450px;
+    margin: 0px auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 3px solid;
+}
+
+.cta-section_contacts span {
+    color: #5d9e2c;
+}
+
+.cta-section_contacts button {
+    background: #5d9e2c;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #fff;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.cta-section_contacts textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.phone_background {
+    max-width: 420px;
+    width: 100%;
+    height: 580px;
+    border: 3px solid;
+    border-radius: 16px;
+}
+
+.section-with-background {
+    position: relative;
+    height: 580px;
+}
+
+.section-with-background button {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    display: flex;
+    gap: 15px;
+    padding: 5px 20px 5px 20px;
+    background: #ffffff00;
+    align-items: center;
+    border: 2px solid #475efa;
+    color: #475efa;
+    border-radius: 10px;
+    max-width: 320px;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.section-with-background a {
+    text-decoration: none;
+    color: #475efa;
+    font-size: 19px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.responsive-image_3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.section-text_h4 {
+    position: absolute;
+    top: 2%;
+    width: 320px;
+    left: 5%;
+}
+
+.support-details {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.support_content h4 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.section-text_p {
+    position: absolute;
+    top: 84%;
+    width: 320px;
+    left: 5%;
+}
+
+.section-text_p p {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.section-text_h4 h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.support_content p {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 35px;
+}
+
+.support_content .no-underline {
+    color: #5d9e2c;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 35px;
+}
+
+.p_cta_section {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Inter';
+    line-height: 1.5;
+    text-align: start;
+}
+
+.p_cta_section a {
+    color: #5d9e2c;
+}
+
+.p_cta_icone_section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.p_cta_icone_section .fas {
+    font-size: 25px;
+    color: #5d9e2c;
+}
+
+/* Адаптация для стилей 1280px */
+@media screen and (max-width: 1280px) {
+    .contacts_company {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .department-info {
+        text-align: center;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .department-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        max-width: 750px;
+    }
+
+    .image_and_feedbac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        max-width: 1000px;
+        margin: 0px auto;
+        gap: 20px;
+        justify-items: flex-end;
+    }
+
+    .contacts_hours {
+        grid-column: 1 / -1;
+        display: flex;
+        max-width: 1000px;
+        background: rgba(255, 255, 255, 0.72);
+        margin: 0px auto;
+        gap: 10px;
+    }
+
+    .section-with-background {
+        position: relative;
+        height: 580px;
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+/* Адаптация для стилей 1000px */
+@media screen and (max-width: 1000px) {
+    .image_and_feedbac {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 800px;
+        margin: 0px auto;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .contacts_hours {
+        /* grid-column: 1 / -1; */
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        background: rgba(255, 255, 255, 0.72);
+        margin: 0px auto;
+        gap: 10px;
+        border: 3px solid;
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px;
+    }
+}

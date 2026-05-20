@@ -1,0 +1,334 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.container_contacts {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+/* Секция с картами */
+.ofecee_adress {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.contacts_company {
+    display: flex;
+}
+
+.offece_card {
+    max-width: 600px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #80808024;
+    border-radius: 2%;
+}
+
+.icone_container_text {
+    max-width: 290px;
+    width: 100%;
+}
+
+.ofecee_adress .fa {
+    font-size: 30px;
+    color: #5d9e2c;
+}
+
+.icone_container_text h2 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.icone_container_text p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+
+.title_map {
+    display: flex;
+    margin-left: 130px;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.title_map .fas {
+    font-size: 35px;
+    color: #5d9e2c;
+}
+
+.title_map h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.contacts_title {
+    margin-left: 25px;
+}
+
+/* Секция с телефонами */
+
+.phone_Numbers {}
+
+.department-card {
+    display: flex;
+    border: 2px solid #80808024;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0px auto;
+}
+
+.icon-block {
+    display: flex;
+    font-size: 43px;
+    margin-right: 10px;
+    background: #e5efe2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-block .fas {
+    background: #5d9e2c;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.fa-gear {}
+
+.department-info {}
+
+.dept-title {}
+
+.dept-description {}
+
+.contact-numbers {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.contact-numbers a {
+    text-decoration: none;
+    color: #5d9e2c;
+    font-family: 'Russo One', Arial, sans-serif;
+}
+
+.phone-link {}
+
+.max {
+    width: 70px;
+}
+
+.contact-buttons {
+    max-width: 300px;
+    width: 100%;
+}
+
+.contact-buttons button {
+    display: flex;
+    gap: 15px;
+    padding: 5px 20px 5px 20px;
+    background: #ffffff;
+    align-items: center;
+    border: 2px solid #475efa;
+    color: #475efa;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    color: #475efa;
+    font-size: 19px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.department-info {
+    max-width: 450px;
+    width: 100%;
+}
+
+.dept-title {
+    font-size: 19px;
+    font-family: 'Domine';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.dept-description {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 25px;
+    font-weight: 500;
+}
+
+/* Секиця с графиком работы */
+.image_and_feedbac {}
+
+.contacts_hours {
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.form {}
+
+.media-form-section {}
+
+.container_form {}
+
+.image_and_feedbac {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cta-section_contacts {
+    background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+}
+
+.cta-section_contacts button {
+    background: #5d9e2c;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 290px;
+    width: 100%;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.phone_background {
+    max-width: 420px;
+    width: 100%;
+    height: 450px;
+    border: 3px solid;
+    border-radius: 16px;
+}
+
+.section-with-background {
+    position: relative;
+}
+
+.section-with-background button {}
+
+.responsive-image_3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.section-text_ {
+    position: absolute;
+    top: 15%;
+    width: 320px;
+    left: 5%;
+
+}
+
+.section-text_p p {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.section-text_h4 h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.support-box_contacts {}
+
+.contacts_hours {}
+
+.schedule {}
+
+.support-details {}
+
+.icon_header {}
+
+.fa {}
+
+.fa-solid {}
+
+.fa-envelope {}
+
+.support_content {}
+
+.text_header {}
+
+.no-underline {}
+
+.link_color {}
+
+.fa-regular {}
+
+.fa-clock {}
+
+.cta-section {}
+
+.title_h2 {}
+
+.form_inner {}

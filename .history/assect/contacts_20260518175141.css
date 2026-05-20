@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.container_contacts {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+/* Секция с картами */
+.ofecee_adress {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.contacts_company {
+    display: flex;
+}
+
+.offece_card {
+    max-width: 600px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #80808024;
+    border-radius: 2%;
+}
+
+.icone_container_text {
+    max-width: 290px;
+    width: 100%;
+}
+
+.ofecee_adress .fa {
+    font-size: 30px;
+    color: #5d9e2c;
+}
+
+.icone_container_text h2 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.icone_container_text p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+
+.title_map {
+    display: flex;
+    margin-left: 130px;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.title_map .fas {
+    font-size: 35px;
+    color: #5d9e2c;
+}
+
+.title_map h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.contacts_title {
+    margin-left: 25px;
+}
+
+/* Секция с телефонами */
+
+.phone_Numbers {}
+
+.department-card {
+    display: flex;
+    border: 2px solid #80808024;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0px auto;
+}
+
+.icon-block {
+    display: flex;
+    font-size: 30px;
+    margin-right: 10px;
+    background: #e5efe2;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.icon-block .fas {
+    background: #5d9e2c;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.fa-gear {}
+
+.department-info {}
+
+.dept-title {}
+
+.dept-description {}
+
+.contact-numbers {
+    font-size: 25px;
+}
+
+.phone-link {}

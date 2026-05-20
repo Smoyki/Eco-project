@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Изображение будет адаптироваться под экран, убирает полосу прокрутки на разных размерах экрана */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Убираем стандартные отступы у элиментов везде*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.map_offece {}
+
+.contacts_container {}
+
+.offece_card {}
+
+.icone_container_text {}
+
+.fa {}
+
+.fas {}
+
+.fa-location-dot {}
