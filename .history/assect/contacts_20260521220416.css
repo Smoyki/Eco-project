@@ -766,5 +766,22 @@ body {
     .hidden-on-mobile {
         display: none;
     }
-    
+}
+
+@media (min-height: 768px) and (max-height: 1000px) and (max-width: 768px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 43%;
+        top: 1%;
+        left: 54%;
+        top: 7%;
+    }
+}
+
+@media (min-height: 768px) and (max-height: 1000px) and (max-width: 768px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 54%;
+        top: 7%;
+    }
 }

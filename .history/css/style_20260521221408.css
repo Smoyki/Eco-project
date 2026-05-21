@@ -1251,7 +1251,7 @@ nav ul a.btn-floating>.material-icons {
 
 .button_close .icon {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .sidenav-close_box .sidenav-close:hover {
@@ -1267,8 +1267,8 @@ nav ul a.btn-floating>.material-icons {
 
 .button_w {
     display: flex;
-    width: 35px;
-    height: 35px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -1286,7 +1286,7 @@ nav ul a.btn-floating>.material-icons {
 
 .button_w .icon {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .button_w .icon:hover {

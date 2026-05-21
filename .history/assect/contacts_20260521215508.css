@@ -560,9 +560,6 @@ body {
 /* Стили под 768px */
 
 @media screen and (max-width: 768px) {
-    .header {
-        height: 110px;
-    }
 
     .support-details {
         display: flex;
@@ -670,7 +667,7 @@ body {
         max-width: 280px;
         width: 100%;
         border: 2px solid #80808059;
-        min-height: 520px;
+        min-height: 620px;
 
     }
 
@@ -766,5 +763,12 @@ body {
     .hidden-on-mobile {
         display: none;
     }
-    
+}
+
+@media (min-height: 768px) and (max-height: 1000px) and (max-width: 768px) {
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 54%;
+        top: 7%;
+    }
 }

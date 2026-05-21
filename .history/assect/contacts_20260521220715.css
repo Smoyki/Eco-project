@@ -766,5 +766,10 @@ body {
     .hidden-on-mobile {
         display: none;
     }
-    
+
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 49%;
+        top: 6%;
+    }
 }
