@@ -336,7 +336,10 @@ body {
     transform: translateY(1px);
 }
 
-
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
 
 .materialboxed {
     display: block;
@@ -356,9 +359,7 @@ body {
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
 }
-.button_consultaion {
-    z-index: 900px;
-}
+
 .header_box {
     max-height: 170px;
 }
@@ -1179,6 +1180,12 @@ nav ul a.btn-floating>.material-icons {
 
 }
 
+.consultation-sidenav .sidenav-close_box {
+    position: absolute;
+    left: 79%;
+    top: 1%;
+}
+
 .checkbox-container .text_p2 {
     font-size: 16px;
 }
@@ -1191,29 +1198,11 @@ nav ul a.btn-floating>.material-icons {
     margin-bottom: 15px;
 }
 
-.close_company {
-    display: grid;
-    grid-template-columns: 0.9fr 0.1fr;
-    align-items: normal;
-    height: 170px;
-}
-
-.close_company_menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: normal;
-    height: 170px;
-    margin-top: 15px;
-}
-
 .consultation .logo_container {
     width: 170px;
     height: 170px;
 }
 
-.sidenav-close_box {
-    margin-left: 25px;
-}
 
 .consultation .logo_company {
     width: 100%;
@@ -1392,7 +1381,6 @@ nav ul a.btn-floating>.material-icons {
     width: 100%;
     margin: 0px;
     margin-left: 10px;
-    margin-top: 10px;
 }
 
 .support_content {}
@@ -1443,6 +1431,12 @@ nav ul a.btn-floating>.material-icons {
     font-weight: 600;
     font-family: 'Inter', Arial, sans-serif;
 
+}
+
+.consultation-sidenav_menu .sidenav-close_box {
+    position: absolute;
+    margin-top: 28px;
+    left: 67%;
 }
 
 .support-details .icon_header {
@@ -3738,10 +3732,16 @@ label {
         left: 4%;
     }
 
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 50%;
+        top: 1%;
+        z-index: 500;
+    }
+
     .consultation .logo_container {
-        width: 200px;
-        height: 200px;
-        margin-left: 60px;
+        width: 170px;
+        height: 170px;
     }
 
     .support-box .no-underline {
@@ -3972,13 +3972,12 @@ label {
 /* header */
 @media screen and (max-width: 599px) {
     .logo_container {
-        width: 200px;
-        height: 200px;
-        z-index: -1;
+        width: 120px;
+        height: 120px;
     }
 
     .header_box {
-        max-height: 170px;
+        max-height: 150px;
         height: 100%;
     }
 
@@ -4355,11 +4354,23 @@ label {
         padding: 7px 15px 5px 15px;
         margin-top: 10px;
     }
+
+    .consultation-sidenav_menu .sidenav-close_box {
+        position: absolute;
+        margin-top: 28px;
+        left: 58%;
+    }
 }
 
 @media (min-height: 768px) and (max-height: 1000px) and (max-width: 768px) {
     .consultation {
         top: 9%;
         left: 4%;
+    }
+
+    .consultation-sidenav .sidenav-close_box {
+        position: absolute;
+        left: 51%;
+        top: 6%;
     }
 }

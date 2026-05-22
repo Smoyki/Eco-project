@@ -336,7 +336,10 @@ body {
     transform: translateY(1px);
 }
 
-
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
 
 .materialboxed {
     display: block;
@@ -356,9 +359,7 @@ body {
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
 }
-.button_consultaion {
-    z-index: 900px;
-}
+
 .header_box {
     max-height: 170px;
 }
@@ -1193,17 +1194,15 @@ nav ul a.btn-floating>.material-icons {
 
 .close_company {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.close_company {
+    display: grid;
     grid-template-columns: 0.9fr 0.1fr;
     align-items: normal;
     height: 170px;
-}
-
-.close_company_menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: normal;
-    height: 170px;
-    margin-top: 15px;
 }
 
 .consultation .logo_container {
@@ -3974,11 +3973,10 @@ label {
     .logo_container {
         width: 200px;
         height: 200px;
-        z-index: -1;
     }
 
     .header_box {
-        max-height: 170px;
+        max-height: 150px;
         height: 100%;
     }
 
@@ -4354,6 +4352,12 @@ label {
         max-width: 320px;
         padding: 7px 15px 5px 15px;
         margin-top: 10px;
+    }
+
+    .consultation-sidenav_menu .sidenav-close_box {
+        position: absolute;
+        margin-top: 28px;
+        left: 58%;
     }
 }
 

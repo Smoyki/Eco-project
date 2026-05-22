@@ -357,7 +357,7 @@ body {
     cursor: zoom-out;
 }
 .button_consultaion {
-    z-index: 900px;
+    z-index: ;
 }
 .header_box {
     max-height: 170px;
@@ -3978,7 +3978,7 @@ label {
     }
 
     .header_box {
-        max-height: 170px;
+        max-height: 150px;
         height: 100%;
     }
 

@@ -127,6 +127,7 @@ body {
     justify-content: flex-end;
 }
 
+
 .сard_phone_contact {
     display: none
 }
@@ -556,6 +557,10 @@ body {
 /* Стили под 768px */
 
 @media screen and (max-width: 768px) {
+    .header {
+        height: 110px;
+    }
+
     .support-details {
         display: flex;
         flex-direction: column;

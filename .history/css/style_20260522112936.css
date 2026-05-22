@@ -336,7 +336,10 @@ body {
     transform: translateY(1px);
 }
 
-
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
 
 .materialboxed {
     display: block;
@@ -356,9 +359,7 @@ body {
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
 }
-.button_consultaion {
-    z-index: 900px;
-}
+
 .header_box {
     max-height: 170px;
 }
@@ -3978,7 +3979,7 @@ label {
     }
 
     .header_box {
-        max-height: 170px;
+        max-height: 150px;
         height: 100%;
     }
 
