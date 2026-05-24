@@ -4089,7 +4089,10 @@ label {
         gap: 15px;
         align-items: center;
     }
-
+        .burger {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* Стили для обратной форма с боку позиционирование */
@@ -4391,10 +4394,5 @@ label {
 
     .button_w .icon {
         font-size: 15px;
-    }
-
-    .burger {
-        width: 35px;
-        height: 35px;
     }
 }

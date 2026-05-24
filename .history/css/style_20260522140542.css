@@ -229,6 +229,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 15px;
 }
 
 .logo_container {
@@ -1211,7 +1212,6 @@ nav ul a.btn-floating>.material-icons {
 .consultation .logo_container {
     width: 200px;
     height: 200px;
-    margin-left: 50px;
 }
 
 .sidenav-close_box {
@@ -3418,6 +3418,11 @@ label {
         display: none
     }
 
+    .contacts_header {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
     .header {
         border-bottom: 4px solid #61cc0c;
         position: sticky;
@@ -3994,6 +3999,11 @@ label {
     .burger__line {
         height: 2px;
     }
+
+    .burger {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* Секция поверх с текстом */
@@ -4089,7 +4099,6 @@ label {
         gap: 15px;
         align-items: center;
     }
-
 }
 
 /* Стили для обратной форма с боку позиционирование */
@@ -4391,10 +4400,5 @@ label {
 
     .button_w .icon {
         font-size: 15px;
-    }
-
-    .burger {
-        width: 35px;
-        height: 35px;
     }
 }

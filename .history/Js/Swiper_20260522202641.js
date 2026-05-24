@@ -65,7 +65,7 @@ const Swiper_number = new Swiper(".Swiper_number", {
             slidesPerView: 2,
         },
 
-        1281: {
+        1280: {
             slidesPerView: 3,
         }
     }

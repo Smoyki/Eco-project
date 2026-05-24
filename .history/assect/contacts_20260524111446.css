@@ -786,12 +786,13 @@ body {
     .cta-section_contacts {
         max-height: 500px;
         height: 100%;
-        padding: 15px 30px 0px 30px;
     }
 
-    .phone_background {
-        width: 100%;
-        height: 560px;
+    .cta-section_contacts {
+        background: linear-gradient(14deg, #f8f9fa 0%, #e8edf5 100%);
+        max-width: 450px;
+        margin: 0px auto;
+        padding: 10px 30px 10px 30px;
     }
 }
 

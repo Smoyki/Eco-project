@@ -62,10 +62,10 @@ const Swiper_number = new Swiper(".Swiper_number", {
 
     breakpoints: {
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
 
-        1281: {
+        1280: {
             slidesPerView: 3,
         }
     }

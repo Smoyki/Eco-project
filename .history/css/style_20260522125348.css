@@ -229,6 +229,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 15px;
 }
 
 .logo_container {
@@ -1209,9 +1210,8 @@ nav ul a.btn-floating>.material-icons {
 }
 
 .consultation .logo_container {
-    width: 200px;
-    height: 200px;
-    margin-left: 50px;
+    width: 170px;
+    height: 170px;
 }
 
 .sidenav-close_box {
@@ -3418,6 +3418,11 @@ label {
         display: none
     }
 
+    .contacts_header {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
     .header {
         border-bottom: 4px solid #61cc0c;
         position: sticky;
@@ -3658,7 +3663,7 @@ label {
     }
 
     .service-card {
-        margin-left: 0px;
+        margin-left: -25px;
     }
 }
 
@@ -3994,6 +3999,11 @@ label {
     .burger__line {
         height: 2px;
     }
+
+    .burger {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* Секция поверх с текстом */
@@ -4089,7 +4099,6 @@ label {
         gap: 15px;
         align-items: center;
     }
-
 }
 
 /* Стили для обратной форма с боку позиционирование */
@@ -4372,29 +4381,7 @@ label {
         grid-template-columns: 1fr 1fr;
         align-items: anchor-center;
         height: 120px;
+        /* margin-top: 15px; */
         justify-items: anchor-center;
-    }
-
-    .menu_ul {
-        margin-top: 0px;
-    }
-
-    .header_box {
-        max-height: 110px;
-        height: 100%;
-    }
-
-    .button_w {
-        width: 20px;
-        height: 20px;
-    }
-
-    .button_w .icon {
-        font-size: 15px;
-    }
-
-    .burger {
-        width: 35px;
-        height: 35px;
     }
 }

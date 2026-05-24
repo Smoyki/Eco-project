@@ -494,15 +494,9 @@ body {
 
 /* стили под карточки 1280px */
 @media screen and (max-width: 1280px) {
-    .image_and_feedbac {
+    .contacts_hours {
         display: none;
     }
-
-    .cta-section_contacts {
-        max-width: 320px;
-        width: 75%;
-    }
-
     .сard_phone_contact {
         display: block
     }
@@ -526,7 +520,6 @@ body {
     .cta-section_contacts {
         max-width: 320px;
         width: 75%;
-        min-height: 530px;
     }
 
     .form_inner input {
@@ -573,7 +566,7 @@ body {
 
     .phone_background {
         width: 100%;
-        height: 590px;
+        height: 580px;
     }
 
     .max {
@@ -615,7 +608,7 @@ body {
     }
 
     .contacts_hours {
-        max-width: 320px;
+        max-width: 280px;
         width: 100%;
         border: 2px solid #80808059;
         min-height: 520px;
@@ -628,11 +621,16 @@ body {
         border-radius: 15px;
     }
 
+    .offece_card {
+        max-width: 350px;
+        width: 100%;
+    }
+
     .section-with-background {
         position: relative;
-        height: 590px;
+        height: 580px;
+        max-width: 290px;
         width: 100%;
-        max-width: 350px;
     }
 }
 
@@ -653,6 +651,42 @@ body {
     .container_contacts {
         max-width: 700px;
         margin: 0px auto;
+    }
+
+    .image_and_feedbac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        max-width: 800px;
+        margin: 0px auto;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .contacts_hours {
+        display: flex;
+        grid-column: 1;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.72);
+        gap: 10px;
+        border: 3px solid;
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .section-with-background {
+        grid-column: 1 / -1;
+        position: relative;
+        height: 580px;
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .cta-section_contacts {
+        max-width: 350px;
+        width: 100%;
     }
 
     .p_cta_icone_section {
@@ -749,50 +783,4 @@ body {
         display: none;
     }
 
-    .card_contaner_swiper {
-        max-width: 350px;
-    }
-
-    .section-with-background {
-        position: relative;
-        height: 580px;
-        max-width: 290px;
-        width: 100%;
-    }
-
-    .contacts_hours {
-        max-width: 280px;
-    }
-
-    .support-details .icon_header {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .p_cta_icone_section {
-        margin-top: 25px;
-    }
-
-    .section-with-background {
-        height: 560px;
-    }
-
-    .phone_background {
-        width: 100%;
-        height: 590px;
-    }
-
-    .cta-section_contacts {
-        max-height: 500px;
-        height: 100%;
-        padding: 15px 30px 0px 30px;
-    }
-
-    .phone_background {
-        width: 100%;
-        height: 560px;
-    }
 }
-
-@media screen and (max-height: 716px) {}
